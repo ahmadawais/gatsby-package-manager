@@ -24,7 +24,7 @@ npm install -g gatsby-package-manager
 ## Usage
 
 ```sh
-// Type `gpm` and answer the question asked.
+# Type `gpm` and answer the question asked.
 gpm
 ```
 
