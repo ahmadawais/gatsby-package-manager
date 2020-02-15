@@ -29,11 +29,27 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [0.3.0](https://github.com/ahmadawais/gatsby-package-manager/compare/0.2.0...0.3.0)
+
+![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 Package Managers [`c8e2eaa`](https://github.com/ahmadawais/gatsby-package-manager/commit/c8e2eaa5a7714ff7f459363bc880c248d4cebc97) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [0.2.0](https://github.com/ahmadawais/gatsby-package-manager/compare/0.1.0...0.2.0)
 
 ![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
 
 > 👌 Docs [`f8e9c24`](https://github.com/ahmadawais/gatsby-package-manager/commit/f8e9c24088004cafb4dc4f0234666ba4c718e3e3) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+>  📖 Changelog update [`7e16036`](https://github.com/ahmadawais/gatsby-package-manager/commit/7e1603697e2a97f9d1727ee0461dfc33dac7ab19) <br>
 
 <br>
 

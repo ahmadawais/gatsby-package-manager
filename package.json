@@ -1,6 +1,6 @@
 {
 	"name": "gatsby-package-manager",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Gatsby Package Manager",
 	"license": "MIT",
 	"repository": "ahmadawais/gatsby-package-manager",
