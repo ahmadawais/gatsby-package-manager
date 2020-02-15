@@ -25,6 +25,7 @@ const green = chalk.bold.green;
 	init();
 	const spinner = ora({ text: "" });
 	// Root.
+	console.log(`${dim(`❯ Use arrow-keys. [enter/return] to submit.`)}`);
 	const promptClone = new Toggle({
 		name: `root`,
 		message: `Are you running this in the root directory of a Gatsby project?`,
@@ -39,9 +40,7 @@ const green = chalk.bold.green;
 	// Manager.
 	const promptMgr = new Toggle({
 		name: `manager`,
-		message: `Which package manager would you like to use? ${dim(
-			`- Use arrow-keys. Return to submit.`
-		)}`,
+		message: `Which package manager would you like to use?`,
 		enabled: `npm`,
 		disabled: `yarn`
 	});
