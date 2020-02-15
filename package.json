@@ -10,15 +10,27 @@
 		"url": "https://twitter.com/MrAhmadAwais"
 	},
 	"main": "index.js",
-	"files": [
-		"index.js"
-	],
+	"bin": {
+		"gpm": "./index.js"
+	},
 	"keywords": [
 		"gatsby-package-manager",
 		"Ahmad Awais",
 		"ahmadawais"
 	],
 	"scripts": {
-		"test": "node test.js"
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"await-to-js": "^2.1.1",
+		"axios": "^0.19.2",
+		"chalk": "^3.0.0",
+		"clear-any-console": "^1.16.0",
+		"cli-handle-error": "^1.0.0",
+		"cli-should-cancel": "^1.0.0",
+		"cli-welcome": "^1.4.0",
+		"enquirer": "^2.3.4",
+		"execa": "^4.0.0",
+		"ora": "^4.0.3"
 	}
 }
