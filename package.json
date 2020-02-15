@@ -1,0 +1,24 @@
+{
+	"name": "gatsby-package-manager",
+	"version": "0.0.1",
+	"description": "Gatsby Package Manager",
+	"license": "MIT",
+	"repository": "ahmadawais/gatsby-package-manager",
+	"author": {
+		"name": "Ahmad Awais",
+		"email": "me@AhmadAwais.com",
+		"url": "https://twitter.com/MrAhmadAwais"
+	},
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"gatsby-package-manager",
+		"Ahmad Awais",
+		"ahmadawais"
+	],
+	"scripts": {
+		"test": "node test.js"
+	}
+}
