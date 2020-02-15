@@ -16,6 +16,7 @@ const handleError = require("cli-handle-error");
 const { Toggle, prompt } = require("enquirer");
 const shouldCancel = require("cli-should-cancel");
 const init = require("./utils/init.js");
+const exit = require("./utils/exit.js");
 const dim = chalk.dim;
 const yellow = chalk.bold.yellow;
 const green = chalk.bold.green;
@@ -26,11 +27,28 @@ const green = chalk.bold.green;
 	// Root.
 	const promptClone = new Toggle({
 		name: `root`,
-		message: `Are you running this in the root directory of a Gatsby project?`
+		message: `Are you running this in the root directory of a Gatsby project?`,
+		enabled: `${green(`YEP [y]`)}`,
+		disabled: `${yellow(`NOPE [n]`)}`
 	});
 	const [errRoot, root] = await to(promptClone.run());
 	handleError(`ROOT`, errRoot);
 	await shouldCancel(root);
+	exit(root);
+
+	// Manager.
+	const promptMgr = new Toggle({
+		name: `manager`,
+		message: `Which package manager would you like to use? ${dim(
+			`- Use arrow-keys. Return to submit.`
+		)}`,
+		enabled: `npm`,
+		disabled: `yarn`
+	});
+	const [errMgr, manager] = await to(promptMgr.run());
+	handleError(`MANAGER`, errMgr);
+	await shouldCancel(manager);
+	const npm = manager ? `true` : `false`;
 
 	// Slug.
 	const promptName = {
@@ -61,7 +79,11 @@ const green = chalk.bold.green;
 	const [errInstall, installed] = await to(
 		Promise.all(
 			pkgs.map(async (pkg, i) => {
-				await execa(`npm`, [`install`, pkg, `--save`]);
+				if (npm) {
+					await execa(`npm`, [`install`, pkg, `--save`]);
+				} else {
+					await execa(`yarn`, [`add`, pkg, `--dev`]);
+				}
 				spinner.start(`${yellow(`INSTALLING`)} package ${i + 1}/${total} …`);
 			})
 		)
