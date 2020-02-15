@@ -27,7 +27,12 @@ process.on("unhandledRejection", err => {
 	await shouldCancel(name);
 	const pkgSlug = name.name;
 
-/**
- * Gatsby Package Manager.
- */
-module.exports = () => {};
+	// Dependencies.
+	spinner.start(`${yellow(`DEPENDENCIES`)} fetching…`);
+
+	const data = await axios.get(`https://unpkg.com/${pkgSlug}/package.json`);
+	const deps = Object.keys(data.data.peerDependencies).filter(
+		dep => dep !== "gatsby"
+	);
+	spinner.succeed(`${green(`DEPENDENCIES`)} ${deps.length} found`);
+
