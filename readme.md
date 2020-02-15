@@ -13,6 +13,8 @@
 
 ```sh
 npm install -g gatsby-package-manager
+
+# Now you have access to `gpm` in your command line.
 ```
 
 <br>
@@ -21,7 +23,7 @@ npm install -g gatsby-package-manager
 
 ## Usage
 
-```js
+```sh
 // Type `gpm` and answer the question asked.
 gpm
 ```

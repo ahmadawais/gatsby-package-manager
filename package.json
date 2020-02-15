@@ -11,7 +11,8 @@
 	},
 	"main": "index.js",
 	"bin": {
-		"gpm": "./index.js"
+		"gpm": "./index.js",
+		"gatsby-package-manager": "./index.js"
 	},
 	"keywords": [
 		"gatsby-package-manager",
