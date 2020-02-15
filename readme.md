@@ -12,7 +12,7 @@
 ## Install
 
 ```sh
-npm install gatsby-package-manager
+npm install -g gatsby-package-manager
 ```
 
 <br>
@@ -22,7 +22,8 @@ npm install gatsby-package-manager
 ## Usage
 
 ```js
-const gatsbyPackageManager = require('gatsby-package-manager');
+// Type `gpm` and answer the question asked.
+gpm
 ```
 
 <br>
