@@ -29,7 +29,7 @@ yarn global add gatsby-package-manager
 
 ### ❯ Install a package
 
-Installs a gatsby package with all of its required dependencies.
+Installs a Gatsby package with all of its required dependencies.
 
 ```sh
 # 1: Interactive mode.
@@ -81,7 +81,7 @@ You can run `gpm --help` or `gpm -h` to access the help documentation.
 
 Make sure you mention all the extra dependencies as `peerDependencies` in the package.json file.
 
-The `peerDependencies` in the package.json what `gatsby-package-manager` looks for. For example: The `gatsby-plugin-mdx` has defined two [peerDependencies](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-mdx/package.json#L16-L19) `@mdx-js/mdx` and `@mdx-js/react` which are required for the [installation](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-mdx#installation).
+The `peerDependencies` in the package.json is what `gatsby-package-manager` looks for. For example: The `gatsby-plugin-mdx` has defined two [peerDependencies](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-mdx/package.json#L16-L19) `@mdx-js/mdx` and `@mdx-js/react` which are required for the [installation](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-mdx#installation).
 
 <br />
 
