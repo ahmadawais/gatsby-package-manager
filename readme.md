@@ -1,6 +1,7 @@
 <h1 align="center">
   <img src="./.github/assets/gatsby-package-manager.jpg" />
 	<br>
+	<br>
 
   Gatsby Package Manager `gpm`
 
