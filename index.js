@@ -38,7 +38,7 @@ let npm;
 	debug && spinner.warn(yellow(`cliData:`));
 	debug && console.log(cliData);
 	const isInteractive = cliData.pkgName ? false : true;
-	const shouldConfigure = cliData.configure ? true : false;
+	const shouldConfig = cliData.config ? true : false;
 
 	// Config.
 	const config = new ConfigStore(pkgJSON.name);
@@ -46,7 +46,7 @@ let npm;
 	debug && spinner.warn(yellow(`pkgManager: ${pkgManager}`));
 
 	// Manager.
-	if (!pkgManager || shouldConfigure) {
+	if (!pkgManager || shouldConfig) {
 		a11y();
 		const promptMgr = new Toggle({
 			name: `manager`,
@@ -81,8 +81,11 @@ let npm;
 		const promptName = {
 			type: `input`,
 			name: `name`,
-			initial: `gatsby-plugin-xyz`,
-			message: `Gatsby package you'd like to install?`
+			initial: `e.g. gatsby-plugin-mdx`,
+			message: `Gatsby package you'd like to install?`,
+			validate(value) {
+				return !value || value === `e.g. gatsby-plugin-mdx` ? `Please enter a valid package name` : true;
+			}
 		};
 		const [errName, name] = await to(prompt(promptName));
 		handleError(`NAME`, errName);
@@ -98,7 +101,15 @@ let npm;
 		// Dependencies.
 		spinner.start(`${yellow(`DEPENDENCIES`)} fetching…`);
 
-		const data = await axios.get(`https://unpkg.com/${pkgSlug}/package.json`);
+		const [errData, data] = await to(axios.get(`https://unpkg.com/${pkgSlug}/package.json`));
+		if (errData) {
+			spinner.fail(
+				`${red(`FAILED`)} Doesn't look like ${red(pkgSlug)} exists.\n${dim(
+					`Check if you made a typo in the package name.\n`
+				)}`
+			);
+			process.exit(0);
+		}
 		const deps = Object.keys(data.data.peerDependencies).filter(dep => dep !== 'gatsby');
 		spinner.succeed(`${green(`DEPENDENCIES`)} ${deps.length} found`);
 
@@ -114,7 +125,7 @@ let npm;
 					if (npm !== false) {
 						await execa(`npm`, [`install`, pkg, `--save`]);
 					} else {
-						await execa(`yarn`, [`add`, pkg, `--dev`]);
+						await execa(`yarn`, [`add`, pkg]);
 					}
 					spinner.start(`${yellow(`INSTALLING`)} package ${i + 1}/${total} …`);
 				})
@@ -125,7 +136,7 @@ let npm;
 		spinner.succeed(`${green(`…and that was it.`)}\n`);
 		spinner.info(`${dim(`Check out the docs for more info on configuring the package`)}\n`);
 		spinner.info(`${green(`ONLINE DOCS →`)} ${dim(`https://www.gatsbyjs.org/packages/${pkgSlug}/`)}`);
-		spinner.info(`${green(`READ DOCS IN TERMINAL →`)} ${yellow(`gpm docs ${pkgSlug}`)}\n`);
+		spinner.info(`${green(`READ DOCS IN TERMINAL →`)} ${dim(`gpm docs ${pkgSlug}`)}\n`);
 	}
 
 	// Docs.
