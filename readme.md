@@ -12,10 +12,14 @@
 ## Install
 
 ```sh
+# Install globally via npm.
 npm install -g gatsby-package-manager
 
-# Now you have access to `gpm` in your command line.
+# OR: Install globally via yarn.
+yarn global add gatsby-package-manager
 ```
+
+> Now you have access to `gpm` or `gatsby-package-manager` in your command line.
 
 <br>
 
@@ -23,13 +27,51 @@ npm install -g gatsby-package-manager
 
 ## Usage
 
+### ❯ Install a package
+
+Installs a gatsby package with all of its required dependencies.
+
 ```sh
+# 1: Interactive mode.
 # Type `gpm` and answer the questions asked.
 gpm
 
 # Alternatively, you can also run it via:
 gatsby-package-manager
+
+# 2: Direct mode.
+# Several ways to run the same command.
+gpm install <pkgName>
+gpm i <pkgName>
+gpm install gatsby-plugin-mdx
+gpm i gatsby-plugin-mdx
 ```
+
+### ❯ Docs for a package
+
+Prints the docs, i.e., `readme.md` file of a package in the command line.
+
+```sh
+# Several ways to run the same command.
+gpm docs <pkgName>
+gpm d <pkgName>
+gpm docs gatsby-plugin-mdx
+gpm d gatsby-plugin-mdx
+```
+
+### ❯ Configure `npm` or `yarn`
+
+The `gatsby-package-manager (gpm)` stores your choice of using  `npm` or `yarn` in `~/.config/configstore/gatsby-package-manager.json` file. This choice can be re-configured by using the option `--config` or `-c` when running `gpm`.
+
+```sh
+gpm --config
+gpm -c
+gpm i gatsby-plugin-mdx -c
+```
+
+### ❯ Help documentation
+
+You can run `gpm --help` or `gpm -h` to access the help documentation.
 
 <br />
 
