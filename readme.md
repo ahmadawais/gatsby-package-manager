@@ -134,6 +134,7 @@ Nothing's ever complete, so bear with me while we keep iterating towards a bette
 ## License & Conduct
 
 - MIT © [Ahmad Awais](https://twitter.com/MrAhmadAwais/)
+- Logo by [Saqib Ameen](https://github.com/ahmadawais/gatsby-package-manager/issues/1)
 - [Code of Conduct](code-of-conduct.md)
 - [Contribute to `gatsby-package-manager`](contributing.md)
 
