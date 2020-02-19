@@ -29,11 +29,39 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [0.9.3](https://github.com/ahmadawais/gatsby-package-manager/compare/0.9.2...0.9.3)
+
+![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 Refactor Config [`e3d5864`](https://github.com/ahmadawais/gatsby-package-manager/commit/e3d586466ce338216e33301cd5af98b96c6de61f) <br>
+> 📦 Contributions welcomed [`0fe8113`](https://github.com/ahmadawais/gatsby-package-manager/commit/0fe811302f1c722ba4f92b69897553c9e231aa58) <br>
+
+![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
+
+> 🐛 Config options [`48cce3e`](https://github.com/ahmadawais/gatsby-package-manager/commit/48cce3e242fde6e65f78fd4d62825c298158ba86) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Usage [`5f1ebaf`](https://github.com/ahmadawais/gatsby-package-manager/commit/5f1ebafc64a75533a111b0f78b31e1ad1b0584c7) <br>
+> 📖 Minor Grammar Fixes [`f42f859`](https://github.com/ahmadawais/gatsby-package-manager/commit/f42f859fef5ad675dfccfce410eabab56672b018) <br>
+> 📖 Minor Grammar Fixes [`bd17cc5`](https://github.com/ahmadawais/gatsby-package-manager/commit/bd17cc5a96b06c794371bef44649accfa820d5f3) <br>
+> 📖 Contribs [`f6af57f`](https://github.com/ahmadawais/gatsby-package-manager/commit/f6af57faec420fb32a8630fe09014a51bdc0cef0) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [0.9.2](https://github.com/ahmadawais/gatsby-package-manager/compare/0.9.1...0.9.2)
 
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
 
 > 🐛 Notification update check [`2ea1260`](https://github.com/ahmadawais/gatsby-package-manager/commit/2ea1260626618a8462047c4d9ece7acca8be0d97) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+>  📖 Changelog update [`ee884af`](https://github.com/ahmadawais/gatsby-package-manager/commit/ee884afef36814946dbe6f71ae6962098b449ba6) <br>
 
 <br>
 
