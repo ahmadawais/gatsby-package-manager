@@ -1,7 +1,6 @@
 const chalk = require(`chalk`);
 const cli = require(`commander`);
-const pkg = require(`./package.json`);
-const log = require(`./utils/log.js`);
+const pkg = require(`./../package.json`);
 const yellow = chalk.bold.yellow;
 const green = chalk.bold.green;
 const data = {};
@@ -20,7 +19,7 @@ Run the interactive mode, without any commands.
 module.exports = () => {
 	cli.name(`gpm`);
 	cli.version(pkg.version, `-v, --version`, `output the current version`);
-	cli.option(`-c, --configure`, `store custom configuration`);
+	cli.option(`-c, --config`, `store custom configuration`);
 	cli.option(`-d, --debug`, `output debugging info`);
 	cli.allowUnknownOption();
 	cli.on(`--help`, () => {
