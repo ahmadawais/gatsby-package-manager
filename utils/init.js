@@ -12,7 +12,6 @@ module.exports = () => {
 	});
 	updateNotifier({
 		pkg: pkgJSON,
-		updateCheckInterval: 0,
 		shouldNotifyInNpmScript: true
 	}).notify({ isGlobal: true });
 };
