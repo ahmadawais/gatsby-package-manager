@@ -79,7 +79,9 @@ You can run `gpm --help` or `gpm -h` to access the help documentation.
 
 ## API: Plugin Authors
 
-Make sure you mention all the extra dependencies as `peerDependencies` in the package.json file. That what `gatsby-package-manager` looks for. E.g. The `gatsby-plugin-mdx` has defined two [peerDependencies](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-mdx/package.json#L16-L19) `@mdx-js/mdx` and `@mdx-js/react` which are required for the [installation](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-mdx#installation).
+Make sure you mention all the extra dependencies as `peerDependencies` in the package.json file.
+
+The `peerDependencies` in the package.json what `gatsby-package-manager` looks for. For example: The `gatsby-plugin-mdx` has defined two [peerDependencies](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-mdx/package.json#L16-L19) `@mdx-js/mdx` and `@mdx-js/react` which are required for the [installation](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-mdx#installation).
 
 <br />
 
