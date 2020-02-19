@@ -64,7 +64,9 @@ let npm;
 	}
 
 	if (isInteractive) {
-		a11y();
+		if (!shouldConfig) {
+			a11y();
+		}
 		// Root.
 		const promptClone = new Toggle({
 			name: `root`,

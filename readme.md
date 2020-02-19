@@ -1,4 +1,9 @@
-# gatsby-package-manager
+<h1 align="center">
+  <img src="./.github/assets/gatsby-package-manager.jpg" />
+
+  Gatsby Package Manager `gpm`
+
+</h1>
 
 [![DOWNLOADS](https://img.shields.io/npm/dt/gatsby-package-manager?label=DOWNLOADS%20%20❯&colorA=6A788D&colorB=6A788D&style=flat)](https://www.npmjs.com/package/gatsby-package-manager) [![Learn VSCode](https://img.shields.io/badge/-VSCODE.pro%20%E2%86%92-gray.svg?colorB=6A788D&style=flat)](https://VSCode.pro/?utm_source=GitHubFOSS)
 [![Follow @MrAhmadAwais on Twitter](https://img.shields.io/badge/FOLLOW%20@MRAHMADAWAIS%20%E2%86%92-gray.svg?colorA=6A788D&colorB=6A788D&style=flat)](https://twitter.com/mrahmadawais/)
@@ -88,7 +93,7 @@ You can run `gpm --help` or `gpm -h` to access the help documentation.
 
 Make sure you mention all the extra dependencies as `peerDependencies` in the package.json file.
 
-The `peerDependencies` in the package.json is what `gatsby-package-manager` looks for. For example: The `gatsby-plugin-mdx` has defined two [peerDependencies](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-mdx/package.json#L16-L19) `@mdx-js/mdx` and `@mdx-js/react` which are required for the [installation](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-mdx#installation).
+The `peerDependencies` in the `package.json` is what `gatsby-package-manager` looks for. For example: The `gatsby-plugin-mdx` has defined two [peerDependencies](https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-mdx/package.json#L16-L19) `@mdx-js/mdx` and `@mdx-js/react` which are required for the [installation](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-mdx#installation).
 
 <br />
 
