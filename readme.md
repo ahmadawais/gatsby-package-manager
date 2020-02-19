@@ -99,7 +99,7 @@ The `peerDependencies` in the package.json is what `gatsby-package-manager` look
 
 </small>
 
-Nothing's ever complete, so bear with us while we keep iterating towards a better future.
+Nothing's ever complete, so bear with me while we keep iterating towards a better future.
 
 > ```html
 > 'Coz every night I lie in bed
