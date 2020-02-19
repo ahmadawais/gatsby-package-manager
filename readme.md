@@ -19,6 +19,8 @@ npm install -g gatsby-package-manager
 yarn global add gatsby-package-manager
 ```
 
+[![Installing gatsby-package-manager](./.github/assets/1.gif)](./../../)
+
 > Now you have access to `gpm` or `gatsby-package-manager` in your command line.
 
 <br>
@@ -29,7 +31,7 @@ yarn global add gatsby-package-manager
 
 ### ❯ Install a package
 
-Installs a Gatsby package with all of its required dependencies.
+Installs a Gatsby package with all of its peer dependencies.
 
 ```sh
 # 1: Interactive mode.
@@ -47,6 +49,8 @@ gpm install gatsby-plugin-mdx
 gpm i gatsby-plugin-mdx
 ```
 
+[![Install a package](./.github/assets/2.gif)](./../../)
+
 ### ❯ Docs for a package
 
 Prints the docs, i.e., `readme.md` file of a package in the command line.
@@ -58,6 +62,9 @@ gpm d <pkgName>
 gpm docs gatsby-plugin-mdx
 gpm d gatsby-plugin-mdx
 ```
+
+[![Docs for a package](./.github/assets/3.gif)](./../../)
+
 
 ### ❯ Configure `npm` or `yarn`
 
