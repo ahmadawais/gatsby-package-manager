@@ -107,6 +107,7 @@ The `peerDependencies` in the package.json what `gatsby-package-manager` looks f
 
 - MIT © [Ahmad Awais](https://twitter.com/MrAhmadAwais/)
 - [Code of Conduct](code-of-conduct.md)
+- [Contribute to `gatsby-package-manager`](contributing.md)
 
 <br>
 
