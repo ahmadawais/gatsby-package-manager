@@ -17,7 +17,6 @@ const TerminalRenderer = require('marked-terminal');
 const handleError = require('cli-handle-error');
 const { Toggle, prompt } = require('enquirer');
 const shouldCancel = require('cli-should-cancel');
-const updateNotifier = require('update-notifier');
 const pkgJSON = require('./package.json');
 const ConfigStore = require('configstore');
 const init = require('./utils/init.js');
@@ -33,15 +32,6 @@ let npm;
 
 (async () => {
 	init();
-	// const notifier = updateNotifier({ pkg: pkgJSON });
-	// notifier.notify();
-	// console.log(`notifier.update`, notifier.update);
-	// updateNotifier({ pkg: pkgJSON }).notify();
-	updateNotifier({
-		pkg: pkgJSON,
-		updateCheckInterval: 0,
-		shouldNotifyInNpmScript: true
-	}).notify({ isGlobal: true });
 	const spinner = ora({ text: '' });
 	const cliData = cli();
 	const debug = cliData.debug;
