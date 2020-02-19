@@ -10,7 +10,9 @@
 
 </h1>
 
-> The Gatsby Package Manager (gpm) helps you install a Gatsby package with all of its dependencies. It also allows you to read the docs for a package right there in the command line — without having to browse any sites.
+<p align="center">
+The Gatsby Package Manager (gpm) helps you install a Gatsby package with all of its dependencies. It also allows you to read the docs for a package right there in the command line — without having to browse any sites.
+</p>
 
 <br>
 
