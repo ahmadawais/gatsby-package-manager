@@ -2,10 +2,10 @@
   <img src="./.github/assets/gatsby-package-manager.jpg" />
 	<br>
 
-	[![DOWNLOADS](https://img.shields.io/npm/dt/gatsby-package-manager?label=DOWNLOADS%20%20❯&colorA=673398&colorB=673398&style=flat)](https://www.npmjs.com/package/gatsby-package-manager) [![Learn VSCode](https://img.shields.io/badge/-VSCODE.pro%20%E2%86%92-gray.svg?colorB=673398&style=flat)](https://VSCode.pro/?utm_source=GitHubFOSS)
+[![DOWNLOADS](https://img.shields.io/npm/dt/gatsby-package-manager?label=DOWNLOADS%20%20❯&colorA=673398&colorB=673398&style=flat)](https://www.npmjs.com/package/gatsby-package-manager) [![Learn VSCode](https://img.shields.io/badge/-VSCODE.pro%20%E2%86%92-gray.svg?colorB=673398&style=flat)](https://VSCode.pro/?utm_source=GitHubFOSS)
 [![Follow @MrAhmadAwais on Twitter](https://img.shields.io/badge/FOLLOW%20@MRAHMADAWAIS%20%E2%86%92-gray.svg?colorA=673398&colorB=673398&style=flat)](https://twitter.com/mrahmadawais/)
 
-  Gatsby Package Manager `gpm`
+Gatsby Package Manager `gpm`
 
 </h1>
 
