@@ -33,7 +33,15 @@ let npm;
 
 (async () => {
 	init();
-	updateNotifier({ pkg: pkgJSON }).notify();
+	// const notifier = updateNotifier({ pkg: pkgJSON });
+	// notifier.notify();
+	// console.log(`notifier.update`, notifier.update);
+	// updateNotifier({ pkg: pkgJSON }).notify();
+	updateNotifier({
+		pkg: pkgJSON,
+		updateCheckInterval: 0,
+		shouldNotifyInNpmScript: true
+	}).notify({ isGlobal: true });
 	const spinner = ora({ text: '' });
 	const cliData = cli();
 	const debug = cliData.debug;
