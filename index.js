@@ -116,7 +116,33 @@ let npm;
 			);
 			process.exit(0);
 		}
-		const deps = Object.keys(data.data.peerDependencies).filter(dep => dep !== 'gatsby');
+		const peerDependencies = data.data.peerDependencies;
+		const deps = Object.keys(peerDependencies)
+			.filter(dep => dep !== 'gatsby')
+			.map(dep => {
+				let depVer = peerDependencies[dep];
+
+				// Check if there is whitespace.
+				if (depVer.indexOf(' ') >= 0) {
+					// Semver ranges can have a join of comparator sets.
+					// e.g. '^3.0.2 || ^4.0.0' or '>=1.2.7 <1.3.0'
+					const rangeSplit = depVer
+						.split(' ')
+						.map(v => coerce(v))
+						.filter(v => valid(v));
+
+					// Take each version in the range and find the maxSatisfying.
+					const verToInstall = maxSatisfying(rangeSplit, depVer);
+					if (verToInstall === null) {
+						return `${dep}`;
+					} else {
+						return `${dep}@${verToInstall}`;
+					}
+				} else {
+					return `${dep}@${depVer}`;
+				}
+			});
+		debug && spinner.warn(yellow(`Dependencies to be installed: ${deps}`));
 		spinner.succeed(`${green(`DEPENDENCIES`)} ${deps.length} found`);
 
 		// Installer.
@@ -128,6 +154,7 @@ let npm;
 		const [errInstall, installed] = await to(
 			Promise.all(
 				pkgs.map(async (pkg, i) => {
+					debug && spinner.warn(yellow(`INSTALLING ${pkg}`));
 					if (npm !== false) {
 						await execa(`npm`, [`install`, pkg, `--save`]);
 					} else {
