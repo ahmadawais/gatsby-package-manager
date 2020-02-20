@@ -17,6 +17,7 @@ const TerminalRenderer = require('marked-terminal');
 const handleError = require('cli-handle-error');
 const { Toggle, prompt } = require('enquirer');
 const shouldCancel = require('cli-should-cancel');
+const semver = require('semver');
 const pkgJSON = require('./package.json');
 const ConfigStore = require('configstore');
 const init = require('./utils/init.js');
@@ -27,6 +28,9 @@ const dim = chalk.dim;
 const yellow = chalk.bold.yellow;
 const red = chalk.bold.red;
 const green = chalk.bold.green;
+const maxSatisfying = semver.maxSatisfying;
+const valid = semver.valid;
+const coerce = semver.coerce;
 let pkgSlug;
 let npm;
 
