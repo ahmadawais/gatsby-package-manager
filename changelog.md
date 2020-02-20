@@ -29,11 +29,28 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [1.1.0](https://github.com/ahmadawais/gatsby-package-manager/compare/1.0.1...1.1.0)
+
+![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 Contraint version installs for peerDeps [`659be15`](https://github.com/ahmadawais/gatsby-package-manager/commit/659be150cb6523f3ec37a21560f16eb5e7346ec8) <br>
+> 📦 Semver management [`0d4ddc4`](https://github.com/ahmadawais/gatsby-package-manager/commit/0d4ddc4b07557bdde08b7c43f883cafc49343bca) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [1.0.1](https://github.com/ahmadawais/gatsby-package-manager/compare/1.0.0...1.0.1)
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
 
 > 📦 Keywords [`3c4b0a2`](https://github.com/ahmadawais/gatsby-package-manager/commit/3c4b0a2d1279a3e208a6e341840ce8c0e47580a3) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+>  📖 Changelog update [`71c045d`](https://github.com/ahmadawais/gatsby-package-manager/commit/71c045d3df8c5bbb45611065d3e06f49aaf47714) <br>
 
 <br>
 
