@@ -29,6 +29,34 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [1.0.0](https://github.com/ahmadawais/gatsby-package-manager/compare/0.9.3...1.0.0)
+
+![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 Logo thanks @saqibameen [`7b53cae`](https://github.com/ahmadawais/gatsby-package-manager/commit/7b53cae288eb88246436b18c23e49a76c153705f) <br>
+> 📦 Credits [`2b8bbbb`](https://github.com/ahmadawais/gatsby-package-manager/commit/2b8bbbbb91096b08f718fa134ffbaebdf6bae6bc) <br>
+
+![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 Gif or didn't happen [`4715a6b`](https://github.com/ahmadawais/gatsby-package-manager/commit/4715a6b46851116659fc7719c95000a29936da9b) <br>
+> 👌 Format [`ac75e6c`](https://github.com/ahmadawais/gatsby-package-manager/commit/ac75e6ce307183618b086cb6de3ec1540e8103fa) <br>
+> 👌 Format [`cb3fe54`](https://github.com/ahmadawais/gatsby-package-manager/commit/cb3fe544b524c4dbf377db5327c283a15df1938b) <br>
+> 👌 Format [`c57f229`](https://github.com/ahmadawais/gatsby-package-manager/commit/c57f2299b1e42ddd8e769952494f7fcb5f5b4621) <br>
+> 👌 Format [`f95377d`](https://github.com/ahmadawais/gatsby-package-manager/commit/f95377d0b1ad2b1a93375f0400c44c1b726916b7) <br>
+> 👌 Format [`0ad1787`](https://github.com/ahmadawais/gatsby-package-manager/commit/0ad1787fce050b710cba8e682534b731f51bcd73) <br>
+> 👌 Format [`d3eca9f`](https://github.com/ahmadawais/gatsby-package-manager/commit/d3eca9f151c7a216227cddc92945b9f127417d1e) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Million dreams [`2e4fb6d`](https://github.com/ahmadawais/gatsby-package-manager/commit/2e4fb6d178694120bcd7d7d9a69f24b7afed1478) <br>
+> 📖 Million dreams [`d172d86`](https://github.com/ahmadawais/gatsby-package-manager/commit/d172d861b35853a5d9989d1cf4ae2655be43730e) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [0.9.3](https://github.com/ahmadawais/gatsby-package-manager/compare/0.9.2...0.9.3)
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
@@ -42,8 +70,9 @@ I have released a video course to help you become a better developer — <a href
 
 ![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
 
-> 📖 Usage [`5f1ebaf`](https://github.com/ahmadawais/gatsby-package-manager/commit/5f1ebafc64a75533a111b0f78b31e1ad1b0584c7) <br>
+>  📖 Changelog update [`55a987e`](https://github.com/ahmadawais/gatsby-package-manager/commit/55a987eb7f4549b7dfe2b8f42c6f84b09f88a7bb) <br>
 > 📖 Minor Grammar Fixes [`f42f859`](https://github.com/ahmadawais/gatsby-package-manager/commit/f42f859fef5ad675dfccfce410eabab56672b018) <br>
+> 📖 Usage [`5f1ebaf`](https://github.com/ahmadawais/gatsby-package-manager/commit/5f1ebafc64a75533a111b0f78b31e1ad1b0584c7) <br>
 > 📖 Minor Grammar Fixes [`bd17cc5`](https://github.com/ahmadawais/gatsby-package-manager/commit/bd17cc5a96b06c794371bef44649accfa820d5f3) <br>
 > 📖 Contribs [`f6af57f`](https://github.com/ahmadawais/gatsby-package-manager/commit/f6af57faec420fb32a8630fe09014a51bdc0cef0) <br>
 
