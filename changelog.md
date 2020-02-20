@@ -29,6 +29,18 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [1.0.1](https://github.com/ahmadawais/gatsby-package-manager/compare/1.0.0...1.0.1)
+
+![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 Keywords [`3c4b0a2`](https://github.com/ahmadawais/gatsby-package-manager/commit/3c4b0a2d1279a3e208a6e341840ce8c0e47580a3) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [1.0.0](https://github.com/ahmadawais/gatsby-package-manager/compare/0.9.3...1.0.0)
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
@@ -48,6 +60,7 @@ I have released a video course to help you become a better developer — <a href
 
 ![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
 
+>  📖 Changelog update [`7e6211b`](https://github.com/ahmadawais/gatsby-package-manager/commit/7e6211b90a0ff64b19eb494edee01202c17a5d72) <br>
 > 📖 Million dreams [`2e4fb6d`](https://github.com/ahmadawais/gatsby-package-manager/commit/2e4fb6d178694120bcd7d7d9a69f24b7afed1478) <br>
 > 📖 Million dreams [`d172d86`](https://github.com/ahmadawais/gatsby-package-manager/commit/d172d861b35853a5d9989d1cf4ae2655be43730e) <br>
 
