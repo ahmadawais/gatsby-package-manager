@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./.github/assets/gatsby-package-manager.jpg" />
+  <a href="./../../"><img src="./.github/assets/gatsby-package-manager.jpg" /></a>
 	<br>
 
 [![DOWNLOADS](https://img.shields.io/npm/dt/gatsby-package-manager?label=DOWNLOADS%20%20❯&colorA=673398&colorB=673398&style=flat)](https://www.npmjs.com/package/gatsby-package-manager) [![Learn VSCode](https://img.shields.io/badge/-VSCODE.pro%20%E2%86%92-gray.svg?colorB=673398&style=flat)](https://VSCode.pro/?utm_source=GitHubFOSS)
